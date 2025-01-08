@@ -44,21 +44,24 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/svgs/
-    - assets/images/
+    - assets/svg/
+    - assets/png/
+    - assets/png/2.0x/
+    - assets/png/1.5x/
+    - assets/png/3.0x/
 
 
 
   fonts:
     - family: Proxima
       fonts:
-        - asset: assets/fonts/Proxima-Nova-Alt-Black.otf
+        - asset: assets/fonts/Proxima_Nova_Alt_Black.otf
           weight: 800
 
-        - asset: assets/fonts/Proxima-Nova-Alt-Bold.otf
+        - asset: assets/fonts/Proxima_Nova_Alt_Bold.otf
           weight: 700
 
-        - asset: assets/fonts/Proxima-Nova-Semibold.otf
+        - asset: assets/fonts/Proxima_Nova_Semibold.otf
           weight: 600
 
         - asset: assets/fonts/Proxima_Nova_Regular.otf

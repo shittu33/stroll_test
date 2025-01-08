@@ -17,5 +17,15 @@ class Assets {
   static const String pngMorning = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/png/morning.png';
   static const String pngNight = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/png/night.png';
   static const String pngPic = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/png/pic.png';
+  static const String svgIcBadge = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/svg/ic_badge.svg';
+  static const String svgIcDownArrow = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/svg/ic_down_arrow.svg';
+  static const String svgIcMicButton = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/svg/ic_mic_button.svg';
+  static const String svgIcOptionCard = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/svg/ic_option_card.svg';
+  static const String svgIcOptionChat = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/svg/ic_option_chat.svg';
+  static const String svgIcOptionFire = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/svg/ic_option_fire.svg';
+  static const String svgIcOptionPerson = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/svg/ic_option_person.svg';
+  static const String svgIcPerson = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/svg/ic_person.svg';
+  static const String svgIcSendBtn = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/svg/ic_send_btn.svg';
+  static const String svgIcTime = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/svg/ic_time.svg';
 
 }

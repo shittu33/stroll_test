@@ -9,13 +9,13 @@ class CardResponseModel {
     if (json['data'] != null) {
       data = [];
       json['data'].forEach((v) {
-        data?.add(Data.fromJson(v));
+        data?.add(CardModel.fromJson(v));
       });
     }
   }
 
   String? status;
-  List<CardResponseModel>? data;
+  List<CardModel>? data;
 
   CardResponseModel copyWith({
     String? status,

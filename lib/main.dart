@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:stroll_test/shared/theme.dart';
 import 'package:stroll_test/dependency_injection.dart';
+import 'package:stroll_test/shared/navigation_manager.dart';
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart';
 
-void main() {
+void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   final dir = await getApplicationDocumentsDirectory();
   Hive.defaultDirectory = dir.path;
-  initServiceLocator()
+  initServiceLocator();
   runApp(const MyApp());
 }
 
@@ -21,37 +22,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Stroll Test',
       theme: appTheme.light,
-      home: const MyHomePage(),
+      routes: NavigationManager.routes,
+      initialRoute: NavigationManager.initial,
+      debugShowCheckedModeBanner: false,
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("Stroll Test"),
-      ),
-      body: Center(
-
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}

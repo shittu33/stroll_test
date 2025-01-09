@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
-import 'dimensions.dart';
 
 var appColor = AppColors();
 var appTheme = AppTheme();
@@ -21,7 +19,7 @@ class AppColors {
 }
 
 var headline2Style =
-    TextStyle(fontSize: 24, fontWeight: FontWeight.w600, color: appColor.black);
+    TextStyle(fontSize: 24, fontWeight: FontWeight.w600, color: appColor.fadeBlack);
 
 var textColor = appColor.white;
 
@@ -29,11 +27,10 @@ class AppTheme {
   var light = ThemeData(
     fontFamily: 'Proxima',
 
-    iconTheme: appColor.primary,
     primaryColor: appColor.primary,
     scaffoldBackgroundColor: appColor.fadeBlack,
     colorScheme: ColorScheme.fromSwatch().copyWith(
-      background: appColor.fadeBlack,
+      surface: appColor.fadeBlack,
     ),
 
     // ignore: prefer_const_constructors
@@ -66,12 +63,17 @@ class AppTheme {
         fontWeight: FontWeight.w500,
         color: appColor.greyText2, //primaryText
       ),
+      labelMedium: TextStyle(
+        fontSize: 12,
+        fontWeight: FontWeight.w600,
+        color: appColor.white, //primaryText
+      )
 
 
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: appColor.fadeBlack,
-      selectedLabelStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+      selectedLabelStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
     ),
   );
 }

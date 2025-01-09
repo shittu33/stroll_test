@@ -58,7 +58,7 @@ flutter:
   fonts:
     - family: Proxima
       fonts:
-        - asset: assets/fonts/Proxima_Nova_Alt_Black.otf
+        - asset: assets/fonts/Proxima_Nova_Extrabold.otf
           weight: 800
 
         - asset: assets/fonts/Proxima_Nova_Alt_Bold.otf

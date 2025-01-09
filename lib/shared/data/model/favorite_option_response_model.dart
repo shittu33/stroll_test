@@ -9,7 +9,7 @@ class FavoriteOptionResponseModel {
     if (json['data'] != null) {
       data = [];
       json['data'].forEach((v) {
-        data?.add(Data.fromJson(v));
+        data?.add(FavoriteOptionModel.fromJson(v));
       });
     }
   }
@@ -19,7 +19,7 @@ class FavoriteOptionResponseModel {
 
   FavoriteOptionResponseModel copyWith({
     String? status,
-    List<Data>? data,
+    List<FavoriteOptionModel>? data,
   }) =>
       FavoriteOptionResponseModel(
         status: status ?? this.status,

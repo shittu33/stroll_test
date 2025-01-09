@@ -2,13 +2,16 @@
 class Assets {
   Assets._();
 
-  static const String 1.5xFade = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/png/1.5x/fade.png';
+  // static const String 1.5xFade = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/png/1.5x/fade.png';
   static const String fontsProximaNovaAltBlack = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/fonts/Proxima_Nova_Alt_Black.otf';
   static const String fontsProximaNovaAltBold = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/fonts/Proxima_Nova_Alt_Bold.otf';
+  static const String fontsProximaNovaExtrabold = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/fonts/Proxima_Nova_Extrabold.otf';
   static const String fontsProximaNovaRegular = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/fonts/Proxima_Nova_Regular.otf';
   static const String fontsProximaNovaSemibold = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/fonts/Proxima_Nova_Semibold.otf';
   static const String fontsProximaNovaThin = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/fonts/Proxima_Nova_Thin.otf';
   static const String fontsProximaNovaThinItalic = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/fonts/Proxima_Nova_Thin_Italic.otf';
+  static const String pngAvartaBg = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/png/avarta_bg.png';
+  static const String pngAvartaTitleBg = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/png/avarta_title_bg.png';
   static const String pngCircle = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/png/circle.png';
   static const String pngCircleFill = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/png/circle_fill.png';
   static const String pngDinner = '/Users/apple/AndroidStudioProjects/Stroll_test/assets/png/dinner.png';

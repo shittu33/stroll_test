@@ -19,6 +19,7 @@ class HomeScreen extends StatelessWidget {
         .select<CardViewModel, int>((CardViewModel vm) => vm.selectedPage);
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
+      systemNavigationBarColor: Colors.transparent,
     ));
     return Scaffold(
         body: Stack(alignment: Alignment.center, children: [
@@ -63,15 +64,46 @@ class HomeScreen extends StatelessWidget {
 
                 return BottomNavigationBarItem(
                   label: 'Card',
-                  icon: Padding(
+                  icon: Container(
+                    height: 40,
+                    width: 40,
                     padding: const EdgeInsets.only(top: 8.0),
-                    child: SvgPicture.asset(
-                      value.icon.trimAssetPath,
-                      height: 28,
-                      width: 28,
-                      color: selectedPageIndex == entry.key
-                          ? appColor.primary
-                          : appColor.greyText,
+                    child: Stack(
+                      children: [
+                        SvgPicture.asset(
+                          value.icon.trimAssetPath,
+                          height: 28,
+                          width: 28,
+                          color: selectedPageIndex == entry.key
+                              ? appColor.primary
+                              : appColor.greyText,
+                        ),
+                        if (value.badge.isNotEmpty)
+                          Align(
+                              alignment: FractionalOffset(0.88, -0.2),
+                              child: Container(
+                                width:22,
+                                height:16,
+                                decoration: BoxDecoration(
+                                    color: appColor.primary,
+                                    borderRadius: BorderRadius.circular(12),
+                                    border: Border.all(
+                                        color: appColor.fadeBlack,
+                                        width: 1)
+                                ),
+                                padding: EdgeInsets.only(bottom: 2),
+                                child: Text(
+                                  value.badge,
+                                  textAlign: TextAlign.center,
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .titleSmall
+                                      ?.copyWith(
+                                          color: appColor.fadeBlack,
+                                          fontWeight: FontWeight.w700),
+                                ),
+                              ))
+                      ],
                     ),
                   ),
                 );

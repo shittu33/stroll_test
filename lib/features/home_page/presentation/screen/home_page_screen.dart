@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
         .select<CardViewModel, int>((CardViewModel vm) => vm.selectedPage);
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
-      systemNavigationBarColor: Colors.transparent,
+      systemNavigationBarColor: appColor.fadeBlack,
     ));
     return Scaffold(
         body: Stack(alignment: Alignment.center, children: [

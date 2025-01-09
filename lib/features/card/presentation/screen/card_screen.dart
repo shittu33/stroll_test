@@ -91,7 +91,7 @@ class ContentDetailsWidget extends StatelessWidget {
                   height: MediaQuery
                       .of(context)
                       .size
-                      .height * 0.22,
+                      .height * 0.220,
                 ),
                 Padding(
                   padding: EdgeInsets.only(left: 27, right: 32),
